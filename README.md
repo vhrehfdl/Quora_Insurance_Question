@@ -1,5 +1,6 @@
 # Purpose
 Quora 질문이 부적절한 질문인지 binary classification
+여기서 부적절한 질문은 성적인 질문, 인종차별적 질문, 정치적인 질문 등을 의미한다.
 
 # Data
 ## Data example
