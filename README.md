@@ -14,3 +14,12 @@ Is the US Federal Reserve a private enterprise?|0
 "I celebrated Trump's victory anniversary by hunting 7 deers for food, what do liberals think about it?"|1
 Why did Japan want to kill Jewish?|1
 What are the types of rattlesnakes in Texas?|0
+
+
+
+# Model 
+1. BI_LSTM 
+  * CuDNN 사용한 Bi LSTM 레이어 2개 쌓았다.
+2. TextCNN 
+  * filter_size : 3, 4, 5
+  * filter_num : 128
