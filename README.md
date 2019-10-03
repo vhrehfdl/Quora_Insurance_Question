@@ -3,6 +3,8 @@ Quora 질문이 부적절한 질문인지 binary classification.
 
 여기서 부적절한 질문은 성적인 질문, 인종차별적 질문, 정치적인 질문 등을 의미한다.
 
+https://www.kaggle.com/c/quora-insincere-questions-classification/data
+
 
 
 # Data
@@ -19,7 +21,14 @@ What are the types of rattlesnakes in Texas?|0
 
 # Model 
 1. BI_LSTM 
-  * CuDNN 사용한 Bi LSTM 레이어 2개 쌓았다.
+   * CuDNN 사용한 Bi LSTM 레이어 2개 쌓았다.
+   * Glove Pre-trained Embedding 사용
+
 2. TextCNN 
-  * filter_size : 3, 4, 5
-  * filter_num : 128
+   * filter_size : 3, 4, 5
+   * filter_num : 128
+   * Glove Pre-trained Embedding 사용
+   
+3. ELMo
+   * tf-hub에서 제공하는 embedding matrix 사용
+   * embedding size가 1024 차원이다.
